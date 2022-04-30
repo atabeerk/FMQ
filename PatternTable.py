@@ -2,7 +2,8 @@ import numpy as np
 import pickle
 
 class PatternTable:
-    def load(file_path):
+    @staticmethod
+    def load(file_path: str):
         with open(file_path, "rb") as infile:
             return pickle.load(infile)
 

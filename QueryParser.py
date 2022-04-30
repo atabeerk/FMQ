@@ -5,4 +5,5 @@ class QueryParser:
         pass
 
     def parse(self, query):
+        #todo@Keles
         return None
