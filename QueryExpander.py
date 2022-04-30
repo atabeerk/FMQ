@@ -16,6 +16,8 @@ class QueryExpander:
                 list(truth_table(query, variables))
             )
         )))
-
-        return np.packbits(bitmaps, axis=1)
+        if list(bitmaps):
+            return np.packbits(bitmaps, axis=1)
+        else:
+            return []
 
