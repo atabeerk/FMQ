@@ -19,7 +19,7 @@ class QueryGenerator:
 
     @staticmethod
     def naive_generator(size):
-        return QueryGenerator.and_generator(size, 0)
+        return QueryGenerator.and_generator(size, 1)
 
     @staticmethod
     def and_generator(size, p=0.5):
