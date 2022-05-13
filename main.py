@@ -18,7 +18,7 @@ for c in [5, 9, 12, 15]:
     COLUMNS = c
     for r in [250000, 500000, 750000, 1000000]:
         ROWS = r
-        data = ss.random(ROWS, COLUMNS, 0.5, data_rvs=np.ones, dtype='f').astype('int8')
+        data = ss.random(ROWS, COLUMNS, 0.01, data_rvs=np.ones, dtype='f').astype('int8')
         data = data.toarray()
         ns = NaiveSearch(data)
         pt = PatternTable(data)
