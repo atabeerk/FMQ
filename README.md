@@ -51,11 +51,16 @@ the column values into corresponding variables into Q and checks if it evaluates
 
 ### Pattern Table
 
-Contains the implementation for constructing and searching the pattern table.
+Contains the implementation for constructing and searching the pattern table. It exposes `load`, `save` and `search` interfaces over the Pattern Table Objects.
 
 ### Query Expander
 
+Given a raw query, `Query Expander` provides a list of valuations resulting in `True`. It exposes the `expand` interface.
+
 ### Query Generator
+
+Query Generator is a random generator object that creates logical formulas. It's used for evaluation and testing.
 
 ### Benchmark
 
+Benchmark contains an early implementation of our evaluation strategy. This implementation now takes place in `main.py`.
