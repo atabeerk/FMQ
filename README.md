@@ -3,7 +3,7 @@
 Given an `NxM` sparse matrix `S`, and set of query `Q` in the form of a logical expressions containing symbols corresponding to
 columns, find the set of rows that satisfy Q.
 
-Our proposed approach `Pattern-Based Search` creates a pattern table (`PatternTable.py`) out of `S`. Then for each query `Q`, expands this 
+Our proposed approach `Pattern-Based Search` creates a pattern table (`PatternTable.py`) out of `S`. Then for each query `Q` (`QueryGenerator.py`), expands this 
 query (`QueryExpander.py`) into a set of queries and extracts the corresponding entries in the pattern table.
 
 To install required python libraries, `pip install -r requirements.txt`
